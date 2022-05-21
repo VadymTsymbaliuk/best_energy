@@ -1,0 +1,2988 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+          integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <div class="header-container">
+        <div class="header-top">
+            <div class="header-top_language-container">
+                <select name="language" id="language-1" class="language">
+                    <option value="ru">RU</option>
+                    <option value="ua">UA</option>
+                </select>
+            </div>
+            <div class="header-top_list-container">
+                <ul class="header-top_list">
+                    <li>
+                        <div class="dropdown company">
+                            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton"
+                                    data-toggle="dropdown" aria-expanded="false">Компанія
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">О нас</a>
+                                <a class="dropdown-item" href="#">Решения</a>
+                                <a class="dropdown-item" href="#">Выполненные объекты</a>
+                                <a class="dropdown-item" href="#">Контакты</a>
+                                <a class="dropdown-item" href="#">Новости</a>
+                                <a class="dropdown-item" href="#">Статьи</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton"
+                                    data-toggle="dropdown" aria-expanded="false">Клиентам
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">Услуги</a>
+                    </li>
+                    <li>
+                        <a href="#">Решения</a>
+                    </li>
+                    <li>
+                        <a href="#">Наши работы</a>
+                    </li>
+                    <li>
+                        <a href="#">Акции</a>
+                    </li>
+                    <li>
+                        <a href="#">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="header-top_email-container">
+                <div class="email">
+                    <a href="#">office@best-energy.com.ua</a>
+                </div>
+            </div>
+            <div class="header-top_messenger-container">
+                <div class="messenger-telegram">
+                    <a href="#">Telegram</a>
+                </div>
+                <div class="messenger-viber">
+                    <a href="#">Viber</a>
+                </div>
+            </div>
+        </div>
+        <div class="header-main">
+            <div class="header-main_logo-container">
+                <img src="images/header/header_logo.png" alt="logo">
+            </div>
+            <div class="header-main_address-container">
+                <p class="current-location">Киев, улица Якутская, 10 </p>
+                <div class="addresses dropdown">
+                    <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+                       aria-expanded="false">
+                        Показать все адреса
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <div class="dropdown-item current d">
+                            <h3>Киев</h3>
+                            <p class="street">
+                                улица Якутская, 10
+                            </p>
+                            <p class="hours-of-work">c 9:00 до 18:00, сб.: c 9:00 до 15:00, вс.: выходной</p>
+                        </div>
+                        <div class="dropdown-divider"></div>
+                        <div class="overflow-auto possible-address">
+                            <div class="dropdown-item">
+                                <h3>Одесса</h3>
+                                <p class="street">
+                                    улица Краснова, 8
+                                </p>
+                                <p class="hours-of-work">c 9:00 до 18:00, сб.: c 9:00 до 15:00, вс.: выходной</p>
+                            </div>
+                            <div class="dropdown-item">
+                                <h3>Харьков</h3>
+                                <p class="street">
+                                    площадь Восстания, 5/7
+                                </p>
+                                <p class="hours-of-work">c 9:00 до 18:00, сб.: c 9:00 до 15:00, вс.: выходной</p>
+                            </div>
+                            <div class="dropdown-item">
+
+                                <h3>Днепр</h3>
+                                <p class="street">
+                                    улица Глинки, 2
+                                </p>
+                                <p class="hours-of-work">c 9:00 до 18:00, сб.: c 9:00 до 15:00, вс.: выходной</p>
+                            </div>
+                            <div class="dropdown-item">
+                                <h3>Львов</h3>
+                                <p class="street">
+                                    улица Чорновола, 67-Г
+                                </p>
+                                <p class="hours-of-work">c 9:00 до 18:00, сб.: c 9:00 до 15:00, вс.: выходной</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-main_phone-container">
+                <ul class="phones">
+                    <li class="phone-item active">
+                        <a href="#">Kyivstar</a>
+                    </li>
+                    <li class="phone-item">
+                        <a href="#">Life</a>
+                    </li>
+                    <li class="phone-item">
+                        <a href="#">Vodafone</a>
+                    </li>
+                    <li class="phone-item">
+                        <a href="#">City</a>
+                    </li>
+                </ul>
+                <p class="phone-number">+38 (068) 680-49-19</p>
+            </div>
+            <div class="header-main_schedule-container">
+                <p>Пн – Пт <span>с 9:00 до 18:00</span></p>
+                <p>Суббота <span>с 9:00 до 15:00</span></p>
+                <div class="callback">
+                    <button class="btn" data-toggle="modal" data-target="#staticBackdrop">Обратный звонок</button>
+                </div>
+            </div>
+            <div class="header-main_selects-container">
+                <div class="selected">
+                    <a href="#">Избранное <span>(3)</span></a>
+
+                </div>
+                <div class="compare">
+                    <a href="#">Сравнить <span>(0)</span></a>
+
+                </div>
+            </div>
+            <div class="header-main_cart-container">
+                <button class="btn">
+                    <p>Корзина</p>
+                    <p>13 942 грн</p>
+                </button>
+            </div>
+            <div class="header-main_cabinet-container dropdown">
+                <button class="btn dropdown-toggle d-flex flex-column" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-expanded="false">
+                    <a href="#">Кабинет</a>
+                    <a href="#">a.sorokin...</a>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-header" href="#">a.sorokin@gmail.com</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Личные данныйе</a>
+                    <a class="dropdown-item" href="#">Избранное (3)</a>
+                    <a class="dropdown-item" href="#">Сравнение (3)</a>
+                    <a class="dropdown-item" href="#">Мои заказы</a>
+                    <a class="dropdown-item" href="#">Просмотренные товары</a>
+                    <a class="dropdown-item exit" href="#">Выйти</a>
+                </div>
+            </div>
+
+        </div>
+        <div class="header-mobile">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="navbar-brand d-flex">
+                    <div class="logo-container">
+                        <img src="images/header/mobile/logo-mobile.svg" alt="logo">
+                    </div>
+                    <div class="btn-container">
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle d-flex flex-column" type="button" id="dropdownMenuButton"
+                                    data-toggle="dropdown" aria-expanded="false">
+                                <img src="images/header/mobile/Phone.svg" alt="phone">
+                            </button>
+
+                        </div>
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle d-flex flex-column" type="button" id="dropdownMenuButton"
+                                    data-toggle="dropdown" aria-expanded="false">
+                                <img src="images/header/mobile/Cart.svg" alt="cart">
+                            </button>
+                        </div>
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle d-flex flex-column" type="button" id="dropdownMenuButton"
+                                    data-toggle="dropdown" aria-expanded="false">
+                                <img src="images/header/mobile/User.svg" alt="cabinet">
+                                <img src="images/header/mobile/User.svg" alt="cabinet">
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-header" href="#">a.sorokin@gmail.com</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Личные данныйе</a>
+                                <a class="dropdown-item" href="#">Избранное (3)</a>
+                                <a class="dropdown-item" href="#">Сравнение (3)</a>
+                                <a class="dropdown-item" href="#">Мои заказы</a>
+                                <a class="dropdown-item" href="#">Просмотренные товары</a>
+                                <a class="dropdown-item exit" href="#">Выйти</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item header-mobile_selects-container">
+                            <select name="language" id="language" class="language">
+                                <option value="ua">UA</option>
+                                <option value="ru">Ru</option>
+                            </select>
+                            <div class="selected">
+                                <p class="mb-0">Избранное <span>(3)</span></p>
+
+                            </div>
+                            <div class="compare">
+                                <p class="mb-0">Сравнить <span>(0)</span></p>
+
+                            </div>
+                        </li>
+                        <li class="nav-item header-mobile_address-container">
+                            <p>Киев, улица Якутская, 10 </p>
+                            <div class="addresses dropdown">
+                                <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                   data-toggle="dropdown"
+                                   aria-expanded="false">
+                                    Показать все адреса
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">
+                                        <div class="address-item">
+                                            <h3>Киев</h3>
+                                            <p>
+                                                улица Якутская, 10
+                                            </p>
+                                            <p>c 9:00 до 18:00, сб.: c 9:00 до 15:00, вс.: выходной</p>
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item" href="#">
+                                        <div class="address-item">
+                                            <h3>Одесса</h3>
+                                            <p>
+                                                улица Краснова, 8
+                                            </p>
+                                            <p>c 9:00 до 18:00, сб.: c 9:00 до 15:00, вс.: выходной</p>
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item" href="#">
+                                        <div class="address-item">
+                                            <h3>Харьков</h3>
+                                            <p>
+                                                площадь Восстания, 5/7
+                                            </p>
+                                            <p>c 9:00 до 18:00, сб.: c 9:00 до 15:00, вс.: выходной</p>
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item" href="#">
+                                        <div class="address-item">
+                                            <h3>Днепр</h3>
+                                            <p>
+                                                улица Глинки, 2
+                                            </p>
+                                            <p>c 9:00 до 18:00, сб.: c 9:00 до 15:00, вс.: выходной</p>
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item" href="#">
+                                        <div class="address-item">
+                                            <h3>Львов</h3>
+                                            <p>
+                                                улица Чорновола, 67-Г
+                                            </p>
+                                            <p>c 9:00 до 18:00, сб.: c 9:00 до 15:00, вс.: выходной</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item header-mobile_communication-container">
+                            <ul class="phones">
+                                <li class="phone-item vodafone">
+                                    <a href="#">+38 (050) 680-49-19</a>
+                                </li>
+                                <li class="phone-item kyivstar">
+                                    <a href="#">+38 (068) 680-49-19</a>
+                                </li>
+                                <li class="phone-item lifecell">
+                                    <a href="#">+38 (063) 680-49-19</a>
+                                </li>
+                                <li class="phone-item city-number">
+                                    <a href="#">+38 (044) 680-49-19</a>
+                                </li>
+                            </ul>
+                            <div class="schedule">
+                                <p>Пн – Пт <span>с 9:00 до 18:00</span></p>
+                                <p>Суббота <span>с 9:00 до 15:00</span></p>
+                                <div class="callback">
+                                    <a href="#">Обратный звонок</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item header-mobile_list-container">
+                            <ul class="header-mobile_list">
+                                <li>
+                                    <div class="dropdown">
+                                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton"
+                                                data-toggle="dropdown" aria-expanded="false">Компанія
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                            <a class="dropdown-item" href="#">О нас</a>
+                                            <a class="dropdown-item" href="#">Решения</a>
+                                            <a class="dropdown-item" href="#">Выполненные объекты</a>
+                                            <a class="dropdown-item" href="#">Контакты</a>
+                                            <a class="dropdown-item" href="#">Новости</a>
+                                            <a class="dropdown-item" href="#">Статьи</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="dropdown">
+                                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton"
+                                                data-toggle="dropdown" aria-expanded="false">Клиентам
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                            <a class="dropdown-item" href="#">Action</a>
+                                            <a class="dropdown-item" href="#">Another action</a>
+                                            <a class="dropdown-item" href="#">Something else here</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#">Услуги</a>
+                                </li>
+                                <li>
+                                    <a href="#">Решения</a>
+                                </li>
+                                <li>
+                                    <a href="#">Наши работы</a>
+                                </li>
+                                <li>
+                                    <a href="#">Акции</a>
+                                </li>
+                                <li>
+                                    <a href="#">Контакты</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item header-mobile_email-container">
+                            <a href="#">office@best-energy.com.ua</a>
+                        </li>
+                        <li class="nav-item header-mobile_messenger-container">
+                            <div class="messenger-telegram">
+                                <a href="#">Telegram</a>
+                            </div>
+                            <div class="messenger-viber">
+                                <a href="#">Viber</a>
+                            </div>
+
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="header-bottom">
+            <div class="header-bottom_catalog-container dropdown order-2 order-lg-1">
+
+                <button class="btn dropdown-toggle catalog-btn" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-expanded="false">
+                    Каталог товаров
+                </button>
+                <div class="dropdown-menu catalog w-100" aria-labelledby="dropdownMenuButton">
+                    <div class="dropdown-item stabilizator">
+                        <button class="btn pl-0">
+                            Стабилизаторы напряжения
+                        </button>
+                        <div class="catalog-menu">
+                            <div class="d-flex justify-content-between">
+                                <div class="sort d-flex">
+                                    <p>По цене:</p>
+                                    <input type="text" placeholder="до 10 000 грн">
+                                    <input type="text" placeholder="до 10 000 грн">
+                                    <input type="text" placeholder="до 10 000 грн">
+                                </div>
+                                <div>
+                                    <button class="btn">
+                                        <img src="https://img.icons8.com/material-outlined/24/000000/delete-sign.png"/>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row flex-nowrap">
+                                <div class="col">
+                                    <div class="row">
+                                        <div class="col">
+                                            <h5>По типу сети:</h5>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Однофазные, 220В</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Трехфазные, 380В</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col">
+                                            <h5>По типу:</h5>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Электронный</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Электродинамический</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col">
+                                            <h5>
+                                                По коммутации:
+                                            </h5>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Симисторные</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Тиристорные</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Контакторные</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Сервоприводные</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Электродинамический</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">ШИМ</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">IGBT</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="row">
+                                        <div class="col">
+                                            <h5>По мощности:</h5>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Менее 1 кВт</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">от 1 до 5 кВт</a>
+                                                    <a href="#">от 5 до 10 кВт</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">от 10 до 20 кВт</a>
+                                                    <a href="#">от 20 до 30 кВт</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">от 30 до 50 кВт</a>
+                                                    <a href="#">от 50 до 100 кВт</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">от 100 до 300 кВт</a>
+                                                    <a href="#">от 300 до 600 кВт</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">от 600 до 1тыс. кВт</a>
+                                                    <a href="#">от 1тыс. до 2тыс. кВт</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">от 2тыс. кВт и более</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col">
+                                            <h5>Оптимизировано для:</h5>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">дома</a>
+                                                    <a href="#">дачи</a>
+                                                    <a href="#">квартиры</a>
+                                                    <a href="#">коттеджа</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">офиса</a>
+                                                    <a href="#">магазина</a>
+                                                    <a href="#">выставочного зала</a>
+                                                </li>
+                                                <li>
+
+                                                    <a href="#">станков с ЧПУ</a>
+                                                    <a href="#">насоса</a>
+                                                    <a href="#">компрессора</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">освещения</a>
+                                                    <a href="#">котла</a>
+                                                    <a href="#">кондиционера</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">МРТ</a>
+                                                    <a href="#">КТ</a>
+                                                    <a href="#">маммографа</a>
+                                                    <a href="#">рентгена</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">отеля</a>
+                                                    <a href="#">гостиницы</a>
+                                                    <a href="#">пансионата</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="row">
+                                        <div class="col">
+                                            <h5>По назначению:</h5>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Бытовое</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Промышленное</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Транспортное</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Медицинское</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Телекоммуникационное</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Топливно-энергетическое</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Военно-промышленное</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Агро-промышленное</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col">
+                                            <h5>По классу:</h5>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Начальный</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Стандартный</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Продвинутый</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Профессиональный</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Премиум</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="row">
+                                        <div class="col">
+                                            <h5>По бренду:</h5>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">NONS/NNST</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">ELEKS</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">VOLTER</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">ORTEA</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Stabilizer</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">PHANTOM</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown-item battery">
+                        <button class="btn pl-0">
+                            Аккумуляторные батареи
+                        </button>
+                        <div class="catalog-menu">
+                            <div class="d-flex justify-content-between">
+                                <div class="sort d-flex">
+                                    <p>По цене:</p>
+                                    <input type="text" placeholder="до 10 000 грн">
+                                    <input type="text" placeholder="до 10 000 грн">
+                                    <input type="text" placeholder="до 10 000 грн">
+                                </div>
+                                <div>
+                                    <button class="btn">
+                                        <img src="https://img.icons8.com/material-outlined/24/000000/delete-sign.png"/>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row flex-nowrap">
+                                <div class="col">
+                                    <div class="row">
+                                        <div class="col">
+                                            <h5>По типу сети:</h5>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Однофазные, 220В</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Трехфазные, 380В</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col">
+                                            <h5>По типу:</h5>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Электронный</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Электродинамический</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col">
+                                            <h5>
+                                                По коммутации:
+                                            </h5>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Симисторные</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Тиристорные</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Контакторные</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Сервоприводные</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Электродинамический</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">ШИМ</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">IGBT</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="row">
+                                        <div class="col">
+                                            <h5>По мощности:</h5>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Менее 1 кВт</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">от 1 до 5 кВт</a>
+                                                    <a href="#">от 5 до 10 кВт</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">от 10 до 20 кВт</a>
+                                                    <a href="#">от 20 до 30 кВт</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">от 30 до 50 кВт</a>
+                                                    <a href="#">от 50 до 100 кВт</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">от 100 до 300 кВт</a>
+                                                    <a href="#">от 300 до 600 кВт</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">от 600 до 1тыс. кВт</a>
+                                                    <a href="#">от 1тыс. до 2тыс. кВт</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">от 2тыс. кВт и более</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col">
+                                            <h5>Оптимизировано для:</h5>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">дома</a>
+                                                    <a href="#">дачи</a>
+                                                    <a href="#">квартиры</a>
+                                                    <a href="#">коттеджа</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">офиса</a>
+                                                    <a href="#">магазина</a>
+                                                    <a href="#">выставочного зала</a>
+                                                </li>
+                                                <li>
+
+                                                    <a href="#">станков с ЧПУ</a>
+                                                    <a href="#">насоса</a>
+                                                    <a href="#">компрессора</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">освещения</a>
+                                                    <a href="#">котла</a>
+                                                    <a href="#">кондиционера</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">МРТ</a>
+                                                    <a href="#">КТ</a>
+                                                    <a href="#">маммографа</a>
+                                                    <a href="#">рентгена</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">отеля</a>
+                                                    <a href="#">гостиницы</a>
+                                                    <a href="#">пансионата</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="row">
+                                        <div class="col">
+                                            <h5>По назначению:</h5>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Бытовое</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Промышленное</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Транспортное</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Медицинское</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Телекоммуникационное</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Топливно-энергетическое</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Военно-промышленное</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Агро-промышленное</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col">
+                                            <h5>По классу:</h5>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Начальный</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Стандартный</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Продвинутый</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Профессиональный</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Премиум</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="row">
+                                        <div class="col">
+                                            <h5>По бренду:</h5>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">NONS/NNST</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">ELEKS</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">VOLTER</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">ORTEA</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Stabilizer</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">PHANTOM</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown-item istochnik">
+                        <button class="btn pl-0">
+                            Источники бесперебойного питания
+                        </button>
+                        <div class="catalog-menu">
+                            <div class="d-flex justify-content-between">
+                                <div class="sort d-flex">
+                                    <p>По цене:</p>
+                                    <input type="text" placeholder="до 10 000 грн">
+                                    <input type="text" placeholder="до 10 000 грн">
+                                    <input type="text" placeholder="до 10 000 грн">
+                                </div>
+                                <div>
+                                    <button class="btn">
+                                        <img src="https://img.icons8.com/material-outlined/24/000000/delete-sign.png"/>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row flex-nowrap">
+                                <div class="col">
+                                    <div class="row">
+                                        <div class="col">
+                                            <h5>По типу сети:</h5>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Однофазные, 220В</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Трехфазные, 380В</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col">
+                                            <h5>По типу:</h5>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Электронный</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Электродинамический</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col">
+                                            <h5>
+                                                По коммутации:
+                                            </h5>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Симисторные</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Тиристорные</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Контакторные</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Сервоприводные</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Электродинамический</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">ШИМ</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">IGBT</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="row">
+                                        <div class="col">
+                                            <h5>По мощности:</h5>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Менее 1 кВт</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">от 1 до 5 кВт</a>
+                                                    <a href="#">от 5 до 10 кВт</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">от 10 до 20 кВт</a>
+                                                    <a href="#">от 20 до 30 кВт</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">от 30 до 50 кВт</a>
+                                                    <a href="#">от 50 до 100 кВт</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">от 100 до 300 кВт</a>
+                                                    <a href="#">от 300 до 600 кВт</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">от 600 до 1тыс. кВт</a>
+                                                    <a href="#">от 1тыс. до 2тыс. кВт</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">от 2тыс. кВт и более</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col">
+                                            <h5>Оптимизировано для:</h5>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">дома</a>
+                                                    <a href="#">дачи</a>
+                                                    <a href="#">квартиры</a>
+                                                    <a href="#">коттеджа</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">офиса</a>
+                                                    <a href="#">магазина</a>
+                                                    <a href="#">выставочного зала</a>
+                                                </li>
+                                                <li>
+
+                                                    <a href="#">станков с ЧПУ</a>
+                                                    <a href="#">насоса</a>
+                                                    <a href="#">компрессора</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">освещения</a>
+                                                    <a href="#">котла</a>
+                                                    <a href="#">кондиционера</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">МРТ</a>
+                                                    <a href="#">КТ</a>
+                                                    <a href="#">маммографа</a>
+                                                    <a href="#">рентгена</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">отеля</a>
+                                                    <a href="#">гостиницы</a>
+                                                    <a href="#">пансионата</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="row">
+                                        <div class="col">
+                                            <h5>По назначению:</h5>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Бытовое</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Промышленное</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Транспортное</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Медицинское</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Телекоммуникационное</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Топливно-энергетическое</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Военно-промышленное</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Агро-промышленное</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col">
+                                            <h5>По классу:</h5>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Начальный</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Стандартный</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Продвинутый</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Профессиональный</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Премиум</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="row">
+                                        <div class="col">
+                                            <h5>По бренду:</h5>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">NONS/NNST</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">ELEKS</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">VOLTER</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">ORTEA</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Stabilizer</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">PHANTOM</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown-item generator">
+                        <button class="btn pl-0">
+                            Генераторы и электростанции
+                        </button>
+                        <div class="catalog-menu">
+                            <div class="d-flex justify-content-between">
+                                <div class="sort d-flex">
+                                    <p>По цене:</p>
+                                    <input type="text" placeholder="до 10 000 грн">
+                                    <input type="text" placeholder="до 10 000 грн">
+                                    <input type="text" placeholder="до 10 000 грн">
+                                </div>
+                                <div>
+                                    <button class="btn">
+                                        <img src="https://img.icons8.com/material-outlined/24/000000/delete-sign.png"/>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row flex-nowrap">
+                                <div class="col">
+                                    <div class="row">
+                                        <div class="col">
+                                            <h5>По типу сети:</h5>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Однофазные, 220В</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Трехфазные, 380В</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col">
+                                            <h5>По типу:</h5>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Электронный</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Электродинамический</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col">
+                                            <h5>
+                                                По коммутации:
+                                            </h5>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Симисторные</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Тиристорные</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Контакторные</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Сервоприводные</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Электродинамический</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">ШИМ</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">IGBT</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="row">
+                                        <div class="col">
+                                            <h5>По мощности:</h5>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Менее 1 кВт</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">от 1 до 5 кВт</a>
+                                                    <a href="#">от 5 до 10 кВт</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">от 10 до 20 кВт</a>
+                                                    <a href="#">от 20 до 30 кВт</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">от 30 до 50 кВт</a>
+                                                    <a href="#">от 50 до 100 кВт</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">от 100 до 300 кВт</a>
+                                                    <a href="#">от 300 до 600 кВт</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">от 600 до 1тыс. кВт</a>
+                                                    <a href="#">от 1тыс. до 2тыс. кВт</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">от 2тыс. кВт и более</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col">
+                                            <h5>Оптимизировано для:</h5>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">дома</a>
+                                                    <a href="#">дачи</a>
+                                                    <a href="#">квартиры</a>
+                                                    <a href="#">коттеджа</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">офиса</a>
+                                                    <a href="#">магазина</a>
+                                                    <a href="#">выставочного зала</a>
+                                                </li>
+                                                <li>
+
+                                                    <a href="#">станков с ЧПУ</a>
+                                                    <a href="#">насоса</a>
+                                                    <a href="#">компрессора</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">освещения</a>
+                                                    <a href="#">котла</a>
+                                                    <a href="#">кондиционера</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">МРТ</a>
+                                                    <a href="#">КТ</a>
+                                                    <a href="#">маммографа</a>
+                                                    <a href="#">рентгена</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">отеля</a>
+                                                    <a href="#">гостиницы</a>
+                                                    <a href="#">пансионата</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="row">
+                                        <div class="col">
+                                            <h5>По назначению:</h5>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Бытовое</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Промышленное</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Транспортное</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Медицинское</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Телекоммуникационное</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Топливно-энергетическое</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Военно-промышленное</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Агро-промышленное</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col">
+                                            <h5>По классу:</h5>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Начальный</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Стандартный</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Продвинутый</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Профессиональный</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Премиум</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="row">
+                                        <div class="col">
+                                            <h5>По бренду:</h5>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">NONS/NNST</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">ELEKS</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">VOLTER</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">ORTEA</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Stabilizer</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">PHANTOM</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown-item zarad_ustr">
+                        <button class="btn pl-0">
+                            Зарядные устройства
+                        </button>
+                        <div class="catalog-menu">
+                            <div class="d-flex justify-content-between">
+                                <div class="sort d-flex">
+                                    <p>По цене:</p>
+                                    <input type="text" placeholder="до 10 000 грн">
+                                    <input type="text" placeholder="до 10 000 грн">
+                                    <input type="text" placeholder="до 10 000 грн">
+                                </div>
+                                <div>
+                                    <button class="btn">
+                                        <img src="https://img.icons8.com/material-outlined/24/000000/delete-sign.png"/>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row flex-nowrap variants-container ">
+                                <div class="col">
+                                    <div class="row">
+                                        <div class="col">
+                                            <h5>По типу сети:</h5>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Однофазные, 220В</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Трехфазные, 380В</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col">
+                                            <h5>По типу:</h5>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Электронный</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Электродинамический</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col">
+                                            <h5>
+                                                По коммутации:
+                                            </h5>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Симисторные</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Тиристорные</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Контакторные</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Сервоприводные</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Электродинамический</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">ШИМ</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">IGBT</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="row">
+                                        <div class="col">
+                                            <h5>По мощности:</h5>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Менее 1 кВт</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">от 1 до 5 кВт</a>
+                                                    <a href="#">от 5 до 10 кВт</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">от 10 до 20 кВт</a>
+                                                    <a href="#">от 20 до 30 кВт</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">от 30 до 50 кВт</a>
+                                                    <a href="#">от 50 до 100 кВт</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">от 100 до 300 кВт</a>
+                                                    <a href="#">от 300 до 600 кВт</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">от 600 до 1тыс. кВт</a>
+                                                    <a href="#">от 1тыс. до 2тыс. кВт</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">от 2тыс. кВт и более</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col">
+                                            <h5>Оптимизировано для:</h5>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">дома</a>
+                                                    <a href="#">дачи</a>
+                                                    <a href="#">квартиры</a>
+                                                    <a href="#">коттеджа</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">офиса</a>
+                                                    <a href="#">магазина</a>
+                                                    <a href="#">выставочного зала</a>
+                                                </li>
+                                                <li>
+
+                                                    <a href="#">станков с ЧПУ</a>
+                                                    <a href="#">насоса</a>
+                                                    <a href="#">компрессора</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">освещения</a>
+                                                    <a href="#">котла</a>
+                                                    <a href="#">кондиционера</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">МРТ</a>
+                                                    <a href="#">КТ</a>
+                                                    <a href="#">маммографа</a>
+                                                    <a href="#">рентгена</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">отеля</a>
+                                                    <a href="#">гостиницы</a>
+                                                    <a href="#">пансионата</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="row">
+                                        <div class="col">
+                                            <h5>По назначению:</h5>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Бытовое</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Промышленное</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Транспортное</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Медицинское</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Телекоммуникационное</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Топливно-энергетическое</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Военно-промышленное</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Агро-промышленное</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col">
+                                            <h5>По классу:</h5>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Начальный</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Стандартный</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Продвинутый</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Профессиональный</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Премиум</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="row">
+                                        <div class="col">
+                                            <h5>По бренду:</h5>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">NONS/NNST</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">ELEKS</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">VOLTER</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">ORTEA</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Stabilizer</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">PHANTOM</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown-item controller">
+                        <button class="btn pl-0">
+                            Солнечные контроллеры заряда
+                        </button>
+                        <div class="catalog-menu">
+                            <div class="d-flex justify-content-between">
+                                <div class="sort d-flex">
+                                    <p>По цене:</p>
+                                    <input type="text" placeholder="до 10 000 грн">
+                                    <input type="text" placeholder="до 10 000 грн">
+                                    <input type="text" placeholder="до 10 000 грн">
+                                </div>
+                                <div>
+                                    <button class="btn">
+                                        <img src="https://img.icons8.com/material-outlined/24/000000/delete-sign.png"/>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row flex-nowrap">
+                                <div class="col">
+                                    <div class="row">
+                                        <div class="col">
+                                            <h5>По типу сети:</h5>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Однофазные, 220В</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Трехфазные, 380В</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col">
+                                            <h5>По типу:</h5>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Электронный</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Электродинамический</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col">
+                                            <h5>
+                                                По коммутации:
+                                            </h5>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Симисторные</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Тиристорные</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Контакторные</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Сервоприводные</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Электродинамический</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">ШИМ</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">IGBT</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="row">
+                                        <div class="col">
+                                            <h5>По мощности:</h5>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Менее 1 кВт</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">от 1 до 5 кВт</a>
+                                                    <a href="#">от 5 до 10 кВт</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">от 10 до 20 кВт</a>
+                                                    <a href="#">от 20 до 30 кВт</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">от 30 до 50 кВт</a>
+                                                    <a href="#">от 50 до 100 кВт</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">от 100 до 300 кВт</a>
+                                                    <a href="#">от 300 до 600 кВт</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">от 600 до 1тыс. кВт</a>
+                                                    <a href="#">от 1тыс. до 2тыс. кВт</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">от 2тыс. кВт и более</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col">
+                                            <h5>Оптимизировано для:</h5>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">дома</a>
+                                                    <a href="#">дачи</a>
+                                                    <a href="#">квартиры</a>
+                                                    <a href="#">коттеджа</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">офиса</a>
+                                                    <a href="#">магазина</a>
+                                                    <a href="#">выставочного зала</a>
+                                                </li>
+                                                <li>
+
+                                                    <a href="#">станков с ЧПУ</a>
+                                                    <a href="#">насоса</a>
+                                                    <a href="#">компрессора</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">освещения</a>
+                                                    <a href="#">котла</a>
+                                                    <a href="#">кондиционера</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">МРТ</a>
+                                                    <a href="#">КТ</a>
+                                                    <a href="#">маммографа</a>
+                                                    <a href="#">рентгена</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">отеля</a>
+                                                    <a href="#">гостиницы</a>
+                                                    <a href="#">пансионата</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="row">
+                                        <div class="col">
+                                            <h5>По назначению:</h5>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Бытовое</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Промышленное</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Транспортное</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Медицинское</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Телекоммуникационное</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Топливно-энергетическое</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Военно-промышленное</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Агро-промышленное</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col">
+                                            <h5>По классу:</h5>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Начальный</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Стандартный</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Продвинутый</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Профессиональный</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Премиум</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="row">
+                                        <div class="col">
+                                            <h5>По бренду:</h5>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">NONS/NNST</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">ELEKS</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">VOLTER</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">ORTEA</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Stabilizer</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">PHANTOM</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown-item solar-battery">
+                        <button class="btn pl-0">
+                            Солнечные батареи и комплекты
+                        </button>
+                        <div class="catalog-menu">
+                            <div class="d-flex justify-content-between">
+                                <div class="sort d-flex">
+                                    <p>По цене:</p>
+                                    <input type="text" placeholder="до 10 000 грн">
+                                    <input type="text" placeholder="до 10 000 грн">
+                                    <input type="text" placeholder="до 10 000 грн">
+                                </div>
+                                <div>
+                                    <button class="btn">
+                                        <img src="https://img.icons8.com/material-outlined/24/000000/delete-sign.png"/>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row flex-nowrap">
+                                <div class="col">
+                                    <div class="row">
+                                        <div class="col">
+                                            <h5>По типу сети:</h5>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Однофазные, 220В</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Трехфазные, 380В</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col">
+                                            <h5>По типу:</h5>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Электронный</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Электродинамический</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col">
+                                            <h5>
+                                                По коммутации:
+                                            </h5>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Симисторные</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Тиристорные</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Контакторные</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Сервоприводные</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Электродинамический</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">ШИМ</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">IGBT</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="row">
+                                        <div class="col">
+                                            <h5>По мощности:</h5>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Менее 1 кВт</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">от 1 до 5 кВт</a>
+                                                    <a href="#">от 5 до 10 кВт</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">от 10 до 20 кВт</a>
+                                                    <a href="#">от 20 до 30 кВт</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">от 30 до 50 кВт</a>
+                                                    <a href="#">от 50 до 100 кВт</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">от 100 до 300 кВт</a>
+                                                    <a href="#">от 300 до 600 кВт</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">от 600 до 1тыс. кВт</a>
+                                                    <a href="#">от 1тыс. до 2тыс. кВт</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">от 2тыс. кВт и более</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col">
+                                            <h5>Оптимизировано для:</h5>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">дома</a>
+                                                    <a href="#">дачи</a>
+                                                    <a href="#">квартиры</a>
+                                                    <a href="#">коттеджа</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">офиса</a>
+                                                    <a href="#">магазина</a>
+                                                    <a href="#">выставочного зала</a>
+                                                </li>
+                                                <li>
+
+                                                    <a href="#">станков с ЧПУ</a>
+                                                    <a href="#">насоса</a>
+                                                    <a href="#">компрессора</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">освещения</a>
+                                                    <a href="#">котла</a>
+                                                    <a href="#">кондиционера</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">МРТ</a>
+                                                    <a href="#">КТ</a>
+                                                    <a href="#">маммографа</a>
+                                                    <a href="#">рентгена</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">отеля</a>
+                                                    <a href="#">гостиницы</a>
+                                                    <a href="#">пансионата</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="row">
+                                        <div class="col">
+                                            <h5>По назначению:</h5>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Бытовое</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Промышленное</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Транспортное</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Медицинское</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Телекоммуникационное</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Топливно-энергетическое</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Военно-промышленное</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Агро-промышленное</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col">
+                                            <h5>По классу:</h5>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Начальный</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Стандартный</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Продвинутый</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Профессиональный</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Премиум</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="row">
+                                        <div class="col">
+                                            <h5>По бренду:</h5>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">NONS/NNST</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">ELEKS</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">VOLTER</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">ORTEA</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Stabilizer</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">PHANTOM</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown-item analizator">
+                        <button class="btn pl-0">
+                            Анализаторы и регистраторы
+                        </button>
+                        <div class="catalog-menu">
+                            <div class="d-flex justify-content-between">
+                                <div class="sort d-flex">
+                                    <p>По цене:</p>
+                                    <input type="text" placeholder="до 10 000 грн">
+                                    <input type="text" placeholder="до 10 000 грн">
+                                    <input type="text" placeholder="до 10 000 грн">
+                                </div>
+                                <div>
+                                    <button class="btn">
+                                        <img src="https://img.icons8.com/material-outlined/24/000000/delete-sign.png"/>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row flex-nowrap">
+                                <div class="col">
+                                    <div class="row">
+                                        <div class="col">
+                                            <h5>По типу сети:</h5>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Однофазные, 220В</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Трехфазные, 380В</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col">
+                                            <h5>По типу:</h5>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Электронный</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Электродинамический</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col">
+                                            <h5>
+                                                По коммутации:
+                                            </h5>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Симисторные</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Тиристорные</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Контакторные</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Сервоприводные</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Электродинамический</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">ШИМ</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">IGBT</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="row">
+                                        <div class="col">
+                                            <h5>По мощности:</h5>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Менее 1 кВт</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">от 1 до 5 кВт</a>
+                                                    <a href="#">от 5 до 10 кВт</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">от 10 до 20 кВт</a>
+                                                    <a href="#">от 20 до 30 кВт</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">от 30 до 50 кВт</a>
+                                                    <a href="#">от 50 до 100 кВт</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">от 100 до 300 кВт</a>
+                                                    <a href="#">от 300 до 600 кВт</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">от 600 до 1тыс. кВт</a>
+                                                    <a href="#">от 1тыс. до 2тыс. кВт</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">от 2тыс. кВт и более</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col">
+                                            <h5>Оптимизировано для:</h5>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">дома</a>
+                                                    <a href="#">дачи</a>
+                                                    <a href="#">квартиры</a>
+                                                    <a href="#">коттеджа</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">офиса</a>
+                                                    <a href="#">магазина</a>
+                                                    <a href="#">выставочного зала</a>
+                                                </li>
+                                                <li>
+
+                                                    <a href="#">станков с ЧПУ</a>
+                                                    <a href="#">насоса</a>
+                                                    <a href="#">компрессора</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">освещения</a>
+                                                    <a href="#">котла</a>
+                                                    <a href="#">кондиционера</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">МРТ</a>
+                                                    <a href="#">КТ</a>
+                                                    <a href="#">маммографа</a>
+                                                    <a href="#">рентгена</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">отеля</a>
+                                                    <a href="#">гостиницы</a>
+                                                    <a href="#">пансионата</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="row">
+                                        <div class="col">
+                                            <h5>По назначению:</h5>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Бытовое</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Промышленное</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Транспортное</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Медицинское</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Телекоммуникационное</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Топливно-энергетическое</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Военно-промышленное</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Агро-промышленное</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col">
+                                            <h5>По классу:</h5>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Начальный</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Стандартный</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Продвинутый</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Профессиональный</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Премиум</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="row">
+                                        <div class="col">
+                                            <h5>По бренду:</h5>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">NONS/NNST</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">ELEKS</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">VOLTER</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">ORTEA</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Stabilizer</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">PHANTOM</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown-item izmeritel">
+                        <button class="btn pl-0">
+                            Измерительные трансформаторы
+                        </button>
+                        <div class="catalog-menu">
+                            <div class="d-flex justify-content-between">
+                                <div class="sort d-flex">
+                                    <p>По цене:</p>
+                                    <input type="text" placeholder="до 10 000 грн">
+                                    <input type="text" placeholder="до 10 000 грн">
+                                    <input type="text" placeholder="до 10 000 грн">
+                                </div>
+                                <div>
+                                    <button class="btn">
+                                        <img src="https://img.icons8.com/material-outlined/24/000000/delete-sign.png"/>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row flex-nowrap">
+                                <div class="col">
+                                    <div class="row">
+                                        <div class="col">
+                                            <h5>По типу сети:</h5>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Однофазные, 220В</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Трехфазные, 380В</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col">
+                                            <h5>По типу:</h5>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Электронный</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Электродинамический</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col">
+                                            <h5>
+                                                По коммутации:
+                                            </h5>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Симисторные</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Тиристорные</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Контакторные</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Сервоприводные</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Электродинамический</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">ШИМ</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">IGBT</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="row">
+                                        <div class="col">
+                                            <h5>По мощности:</h5>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Менее 1 кВт</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">от 1 до 5 кВт</a>
+                                                    <a href="#">от 5 до 10 кВт</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">от 10 до 20 кВт</a>
+                                                    <a href="#">от 20 до 30 кВт</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">от 30 до 50 кВт</a>
+                                                    <a href="#">от 50 до 100 кВт</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">от 100 до 300 кВт</a>
+                                                    <a href="#">от 300 до 600 кВт</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">от 600 до 1тыс. кВт</a>
+                                                    <a href="#">от 1тыс. до 2тыс. кВт</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">от 2тыс. кВт и более</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col">
+                                            <h5>Оптимизировано для:</h5>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">дома</a>
+                                                    <a href="#">дачи</a>
+                                                    <a href="#">квартиры</a>
+                                                    <a href="#">коттеджа</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">офиса</a>
+                                                    <a href="#">магазина</a>
+                                                    <a href="#">выставочного зала</a>
+                                                </li>
+                                                <li>
+
+                                                    <a href="#">станков с ЧПУ</a>
+                                                    <a href="#">насоса</a>
+                                                    <a href="#">компрессора</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">освещения</a>
+                                                    <a href="#">котла</a>
+                                                    <a href="#">кондиционера</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">МРТ</a>
+                                                    <a href="#">КТ</a>
+                                                    <a href="#">маммографа</a>
+                                                    <a href="#">рентгена</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">отеля</a>
+                                                    <a href="#">гостиницы</a>
+                                                    <a href="#">пансионата</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="row">
+                                        <div class="col">
+                                            <h5>По назначению:</h5>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Бытовое</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Промышленное</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Транспортное</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Медицинское</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Телекоммуникационное</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Топливно-энергетическое</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Военно-промышленное</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Агро-промышленное</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col">
+                                            <h5>По классу:</h5>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Начальный</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Стандартный</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Продвинутый</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Профессиональный</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Премиум</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="row">
+                                        <div class="col">
+                                            <h5>По бренду:</h5>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">NONS/NNST</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">ELEKS</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">VOLTER</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">ORTEA</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Stabilizer</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">PHANTOM</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown-item counter">
+                        <button class="btn pl-0">
+                            Счетчики электроэнергии
+                        </button>
+                        <div class="catalog-menu">
+                            <div class="d-flex justify-content-between">
+                                <div class="sort d-flex">
+                                    <p>По цене:</p>
+                                    <input type="text" placeholder="до 10 000 грн">
+                                    <input type="text" placeholder="до 10 000 грн">
+                                    <input type="text" placeholder="до 10 000 грн">
+                                </div>
+                                <div>
+                                    <button class="btn">
+                                        <img src="https://img.icons8.com/material-outlined/24/000000/delete-sign.png"/>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row flex-nowrap">
+                                <div class="col">
+                                    <div class="row">
+                                        <div class="col">
+                                            <h5>По типу сети:</h5>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Однофазные, 220В</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Трехфазные, 380В</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col">
+                                            <h5>По типу:</h5>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Электронный</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Электродинамический</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col">
+                                            <h5>
+                                                По коммутации:
+                                            </h5>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Симисторные</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Тиристорные</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Контакторные</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Сервоприводные</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Электродинамический</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">ШИМ</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">IGBT</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="row">
+                                        <div class="col">
+                                            <h5>По мощности:</h5>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Менее 1 кВт</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">от 1 до 5 кВт</a>
+                                                    <a href="#">от 5 до 10 кВт</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">от 10 до 20 кВт</a>
+                                                    <a href="#">от 20 до 30 кВт</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">от 30 до 50 кВт</a>
+                                                    <a href="#">от 50 до 100 кВт</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">от 100 до 300 кВт</a>
+                                                    <a href="#">от 300 до 600 кВт</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">от 600 до 1тыс. кВт</a>
+                                                    <a href="#">от 1тыс. до 2тыс. кВт</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">от 2тыс. кВт и более</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col">
+                                            <h5>Оптимизировано для:</h5>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">дома</a>
+                                                    <a href="#">дачи</a>
+                                                    <a href="#">квартиры</a>
+                                                    <a href="#">коттеджа</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">офиса</a>
+                                                    <a href="#">магазина</a>
+                                                    <a href="#">выставочного зала</a>
+                                                </li>
+                                                <li>
+
+                                                    <a href="#">станков с ЧПУ</a>
+                                                    <a href="#">насоса</a>
+                                                    <a href="#">компрессора</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">освещения</a>
+                                                    <a href="#">котла</a>
+                                                    <a href="#">кондиционера</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">МРТ</a>
+                                                    <a href="#">КТ</a>
+                                                    <a href="#">маммографа</a>
+                                                    <a href="#">рентгена</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">отеля</a>
+                                                    <a href="#">гостиницы</a>
+                                                    <a href="#">пансионата</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="row">
+                                        <div class="col">
+                                            <h5>По назначению:</h5>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Бытовое</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Промышленное</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Транспортное</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Медицинское</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Телекоммуникационное</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Топливно-энергетическое</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Военно-промышленное</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Агро-промышленное</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col">
+                                            <h5>По классу:</h5>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Начальный</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Стандартный</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Продвинутый</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Профессиональный</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Премиум</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="row">
+                                        <div class="col">
+                                            <h5>По бренду:</h5>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">NONS/NNST</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">ELEKS</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">VOLTER</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">ORTEA</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Stabilizer</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">PHANTOM</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown-item ippt">
+                        <button class="btn pl-0">
+                            Источники питания постоянного тока
+                        </button>
+                        <div class="catalog-menu">
+                            <div class="d-flex justify-content-between">
+                                <div class="sort d-flex">
+                                    <p>По цене:</p>
+                                    <input type="text" placeholder="до 10 000 грн">
+                                    <input type="text" placeholder="до 10 000 грн">
+                                    <input type="text" placeholder="до 10 000 грн">
+                                </div>
+                                <div>
+                                    <button class="btn">
+                                        <img src="https://img.icons8.com/material-outlined/24/000000/delete-sign.png"/>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row flex-nowrap">
+                                <div class="col">
+                                    <div class="row">
+                                        <div class="col">
+                                            <h5>По типу сети:</h5>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Однофазные, 220В</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Трехфазные, 380В</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col">
+                                            <h5>По типу:</h5>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Электронный</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Электродинамический</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col">
+                                            <h5>
+                                                По коммутации:
+                                            </h5>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Симисторные</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Тиристорные</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Контакторные</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Сервоприводные</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Электродинамический</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">ШИМ</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">IGBT</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="row">
+                                        <div class="col">
+                                            <h5>По мощности:</h5>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Менее 1 кВт</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">от 1 до 5 кВт</a>
+                                                    <a href="#">от 5 до 10 кВт</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">от 10 до 20 кВт</a>
+                                                    <a href="#">от 20 до 30 кВт</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">от 30 до 50 кВт</a>
+                                                    <a href="#">от 50 до 100 кВт</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">от 100 до 300 кВт</a>
+                                                    <a href="#">от 300 до 600 кВт</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">от 600 до 1тыс. кВт</a>
+                                                    <a href="#">от 1тыс. до 2тыс. кВт</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">от 2тыс. кВт и более</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col">
+                                            <h5>Оптимизировано для:</h5>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">дома</a>
+                                                    <a href="#">дачи</a>
+                                                    <a href="#">квартиры</a>
+                                                    <a href="#">коттеджа</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">офиса</a>
+                                                    <a href="#">магазина</a>
+                                                    <a href="#">выставочного зала</a>
+                                                </li>
+                                                <li>
+
+                                                    <a href="#">станков с ЧПУ</a>
+                                                    <a href="#">насоса</a>
+                                                    <a href="#">компрессора</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">освещения</a>
+                                                    <a href="#">котла</a>
+                                                    <a href="#">кондиционера</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">МРТ</a>
+                                                    <a href="#">КТ</a>
+                                                    <a href="#">маммографа</a>
+                                                    <a href="#">рентгена</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">отеля</a>
+                                                    <a href="#">гостиницы</a>
+                                                    <a href="#">пансионата</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="row">
+                                        <div class="col">
+                                            <h5>По назначению:</h5>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Бытовое</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Промышленное</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Транспортное</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Медицинское</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Телекоммуникационное</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Топливно-энергетическое</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Военно-промышленное</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Агро-промышленное</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col">
+                                            <h5>По классу:</h5>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Начальный</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Стандартный</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Продвинутый</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Профессиональный</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Премиум</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="row">
+                                        <div class="col">
+                                            <h5>По бренду:</h5>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">NONS/NNST</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">ELEKS</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">VOLTER</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">ORTEA</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Stabilizer</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">PHANTOM</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-bottom_configurators-container dropdown order-3 order-lg-2">
+                <button class="btn dropdown-toggle btn-configurators" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-expanded="false">
+                    Конфигураторы
+                </button>
+                <div class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item s-stabilisator" href="#">Расчёт стабилизатора</a>
+                    <a class="dropdown-item s-ibp" href="#">Расчёт модели ИБП</a>
+                    <a class="dropdown-item s-value" href="#">Расчёт ёмкости батареи</a>
+                    <a class="dropdown-item s-diametr" href="#">Расчёт сечения кабеля</a>
+                    <a class="dropdown-item s-green" href="#">«Зелёный» тариф</a>
+                    <a class="dropdown-item s-stabilisator" href="#">Расчёт стабилизатора</a>
+                    <a class="dropdown-item s-ibp" href="#">Расчёт модели ИБП</a>
+                    <a class="dropdown-item s-value" href="#">Расчёт ёмкости батареи</a>
+                    <a class="dropdown-item s-diametr" href="#">Расчёт сечения кабеля</a>
+                    <a class="dropdown-item s-green" href="#">«Зелёный» тариф</a>
+
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Показать все конфигураторы</a>
+                </div>
+            </div>
+            <div class="header-bottom_search-container order-1 order-lg-3">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Поиск по сайту"
+                           aria-label="Поиск по сайту" aria-describedby="button-addon2">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary" type="button" id="button-addon2">Искать</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="modal fade" tabindex="-1" id="staticBackdrop" data-backdrop="static" data-keyboard="false"
+         aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered ">
+            <div class="modal-content">
+                <div class="modal-header pb-0 border-bottom-0">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center pt-0">
+                    <h3 class="modal-title">Заказ обратного звонка</h3>
+                    <p>Оставьте номер Вашего телефона и наш оператор перезвонит Вам в течение часа.</p>
+                    <div class="form-group flex-column">
+                        <input class="form-control mb-4" type="text" placeholder="Ваше имя">
+                        <input class="form-control" type="text" placeholder="+38 (___) ___ - ___ - __">
+                    </div>
+                </div>
+                <div class="modal-footer justify-content-center border-top-0 pt-0">
+                    <button type="button" class="btn btn-primary">Заказать комплект</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</header>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+</body>
+</html>

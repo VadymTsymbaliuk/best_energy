@@ -1,0 +1,753 @@
+header .header-container .header-top, header .header-container .header-main, header .header-container .header-bottom {
+    display: flex;
+    padding: 0 10px;
+    text-align: center;
+    align-items: center;
+}
+header .header-container .header-top {
+    padding: 14px 10px;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #26447a;
+}
+header .header-container .header-top .header-top_language-container .language {
+    background-color: #26447a;
+    border: none;
+    color: #fff;
+}
+header .header-container .header-top .header-top_language-container .language:focus-visible {
+    outline: none;
+}
+header .header-container .header-top .header-top_list {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 40px;
+    font-weight: 400;
+    margin-bottom: 0;
+    padding-left: 0;
+    align-items: center;
+    text-align: center;
+}
+header .header-container .header-top .header-top_list li > a {
+    color: #fff;
+}
+header .header-container .header-top .header-top_list li .dropdown .btn {
+    color: #fff;
+    padding: 0;
+}
+header .header-container .header-top .header-top_email-container .email {
+    position: relative;
+    padding-left: 16px;
+}
+header .header-container .header-top .header-top_email-container .email::before {
+    position: absolute;
+    content: "";
+    top: 4px;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    background-image: url("./images/header/Mail.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+header .header-container .header-top .header-top_email-container .email a {
+    color: #fff;
+    font-size: 13px;
+}
+header .header-container .header-top .header-top_messenger-container {
+    display: flex;
+    gap: 30px;
+    width: 180px;
+}
+header .header-container .header-top .header-top_messenger-container .messenger-telegram, header .header-container .header-top .header-top_messenger-container .messenger-viber {
+    position: relative;
+    padding-left: 28px;
+}
+header .header-container .header-top .header-top_messenger-container .messenger-telegram::before, header .header-container .header-top .header-top_messenger-container .messenger-viber::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+header .header-container .header-top .header-top_messenger-container .messenger-telegram a, header .header-container .header-top .header-top_messenger-container .messenger-viber a {
+    color: #fff;
+}
+header .header-container .header-top .header-top_messenger-container .messenger-telegram::before {
+    background-image: url("./images/header/messengers/telegram-icon.svg");
+}
+header .header-container .header-top .header-top_messenger-container .messenger-viber::before {
+    background-image: url("./images/header/messengers/viber-icon.svg");
+}
+header .header-container .header-main {
+    padding: 19px 20px;
+    justify-content: space-between;
+}
+header .header-container .header-main .header-main_phone-container .phones {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+}
+header .header-container .header-main .header-main_phone-container .phones .phone-item {
+    position: relative;
+    border-bottom: 2px solid #cfd7e6;
+    padding: 0 5px;
+}
+header .header-container .header-main .header-main_phone-container .phones .phone-item a {
+    color: #000;
+}
+header .header-container .header-main .header-main_phone-container .phones .active {
+    border-bottom: 2px solid #4674c9;
+}
+header .header-container .header-main .header-main_phone-container .phones .active a {
+    color: #4674c9;
+    font-weight: 700;
+}
+header .header-container .header-main .header-main_phone-container .phone-number {
+    position: relative;
+    padding-top: 10px;
+    padding-left: 30px;
+    font-size: 15px;
+    font-weight: 500;
+}
+header .header-container .header-main .header-main_phone-container .phone-number::before {
+    position: absolute;
+    content: "";
+    top: 10px;
+    left: 0;
+    width: 16px;
+    height: 14px;
+    background-image: url("./images/header/mobile-operator/icon-phone-kyivstar.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+header .header-container .header-main .header-main_address-container .current-location {
+    font-weight: 700;
+    position: relative;
+    padding-left: 24px;
+    margin-bottom: 8px;
+}
+header .header-container .header-main .header-main_address-container .current-location::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 14px;
+    height: 17px;
+    background: url("./images/header/Icon.svg") no-repeat center center;
+    background-size: cover;
+}
+header .header-container .header-main .header-main_address-container .addresses .dropdown-menu {
+    box-shadow: 0px 0px 15px rgba(117, 132, 158, 0.5);
+}
+header .header-container .header-main .header-main_address-container .addresses .dropdown-menu .possible-address {
+    max-height: 236px;
+}
+header .header-container .header-main .header-main_address-container .addresses .dropdown-menu .dropdown-item h3 {
+    font-weight: 700;
+    font-size: 15px;
+    color: #286fda;
+}
+header .header-container .header-main .header-main_address-container .addresses .dropdown-menu .dropdown-item p {
+    font-weight: 400;
+    font-size: 13px;
+}
+header .header-container .header-main .header-main_address-container .addresses .dropdown-menu .dropdown-item .street {
+    color: #425069;
+}
+header .header-container .header-main .header-main_address-container .addresses .dropdown-menu .dropdown-item .hours-of-work {
+    color: #93a1bc;
+}
+header .header-container .header-main .header-main_address-container .btn {
+    color: #4674c9;
+    padding: 0;
+    margin: 0;
+    border-bottom: 1px dotted #4674c9;
+}
+header .header-container .header-main .header-main_address-container .btn::after {
+    display: none;
+}
+header .header-container .header-main .header-main_schedule-container p {
+    margin-bottom: 0;
+    font-size: 11px;
+}
+header .header-container .header-main .header-main_schedule-container span {
+    color: #93a1bc;
+}
+header .header-container .header-main .header-main_schedule-container .callback .btn {
+    position: relative;
+    padding-top: 4px;
+    padding-left: 23px;
+    font-size: 13px;
+    color: #4674c9;
+    text-decoration: underline dotted;
+}
+header .header-container .header-main .header-main_schedule-container .callback .btn::before {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-image: url("./images/header/Phone.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+header .header-container .header-main .header-main_selects-container {
+    color: #26447a;
+}
+header .header-container .header-main .header-main_selects-container .selected, header .header-container .header-main .header-main_selects-container .compare {
+    position: relative;
+    padding-left: 20px;
+    display: flex;
+    gap: 5px;
+    font-size: 11px;
+}
+header .header-container .header-main .header-main_selects-container .selected::before, header .header-container .header-main .header-main_selects-container .compare::before {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    content: "";
+    width: 16px;
+    height: 14px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+header .header-container .header-main .header-main_selects-container .selected a, header .header-container .header-main .header-main_selects-container .compare a {
+    margin-bottom: 5px;
+    color: #26447a;
+}
+header .header-container .header-main .header-main_selects-container .selected::before {
+    background-image: url("./images/header/selected.svg");
+}
+header .header-container .header-main .header-main_selects-container .compare::before {
+    background-image: url("./images/header/Compare.svg");
+}
+header .header-container .header-main .header-main_cart-container, header .header-container .header-main .header-main_cabinet-container {
+    width: 140px;
+    height: 55px;
+}
+header .header-container .header-main .header-main_cart-container .btn, header .header-container .header-main .header-main_cabinet-container .btn {
+    position: relative;
+    text-align: left;
+    border-radius: 0;
+    width: 100%;
+    height: 100%;
+    padding-left: 53px;
+    padding-right: 20px;
+}
+header .header-container .header-main .header-main_cart-container .btn::before, header .header-container .header-main .header-main_cabinet-container .btn::before {
+    position: absolute;
+    top: 15px;
+    left: 16px;
+    z-index: 1;
+    content: "";
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+header .header-container .header-main .header-main_cart-container .btn:hover, header .header-container .header-main .header-main_cabinet-container .btn:hover {
+    background-color: #f2f5f9;
+}
+header .header-container .header-main .header-main_cart-container .btn p, header .header-container .header-main .header-main_cabinet-container .btn p {
+    margin-bottom: 0;
+    font-size: 11px;
+    font-weight: 400;
+    color: #26447a;
+}
+header .header-container .header-main .header-main_cart-container .btn p:first-child, header .header-container .header-main .header-main_cabinet-container .btn p:first-child {
+    font-weight: 700;
+    font-size: 13px;
+}
+header .header-container .header-main .header-main_cart-container .btn::before {
+    background-image: url("./images/header/Cart.svg");
+}
+header .header-container .header-main .header-main_cabinet-container .btn::before {
+    background-image: url("./images/header/cabinet-icon.svg");
+}
+header .header-container .header-main .header-main_cabinet-container .btn a {
+    color: #26447a;
+}
+header .header-container .header-main .header-main_cabinet-container .btn::after {
+    display: none;
+}
+header .header-container .header-main .header-main_cabinet-container .dropdown-menu {
+    right: 0;
+    left: auto !important;
+    box-shadow: 0px 0px 15px rgba(117, 132, 158, 0.5);
+}
+header .header-container .header-main .header-main_cabinet-container .dropdown-menu .exit {
+    color: red;
+}
+header .header-container .header-mobile {
+    display: none;
+    background: #26447a;
+}
+header .header-container .header-bottom {
+    padding: 5px 30px;
+    gap: 24px;
+    background-color: #eaeef5;
+}
+header .header-container .header-bottom .header-bottom_catalog-container {
+    width: 324px;
+}
+header .header-container .header-bottom .header-bottom_catalog-container .catalog-btn {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    background-color: #4674c9;
+    color: #fff;
+    margin: -15px 0;
+    padding: 15px 0;
+}
+header .header-container .header-bottom .header-bottom_catalog-container .catalog-btn::before {
+    position: absolute;
+    top: 30%;
+    left: 20px;
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-image: url("./images/header/Menu.svg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+header .header-container .header-bottom .header-bottom_catalog-container .catalog-btn::after {
+    display: none;
+}
+header .header-container .header-bottom .header-bottom_catalog-container .catalog {
+    list-style: none;
+    width: 324px;
+}
+header .header-container .header-bottom .header-bottom_catalog-container .catalog .dropdown-item {
+    position: relative;
+    padding-left: 44px;
+    padding-right: 15px;
+}
+header .header-container .header-bottom .header-bottom_catalog-container .catalog .dropdown-item::before {
+    position: absolute;
+    top: 12px;
+    left: 15px;
+    width: 16px;
+    height: 15px;
+    content: "";
+    background-size: cover;
+}
+header .header-container .header-bottom .header-bottom_catalog-container .catalog .dropdown-item > .btn {
+    position: relative;
+    width: 100%;
+    text-align: left;
+}
+header .header-container .header-bottom .header-bottom_catalog-container .catalog .dropdown-item > .btn::after {
+    position: absolute;
+    top: 12px;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    content: "";
+    background: url("https://img.icons8.com/material-rounded/24/000000/chevron-right.png") no-repeat center center;
+    background-size: cover;
+}
+header .header-container .header-bottom .header-bottom_catalog-container .catalog .dropdown-item .catalog-menu {
+    display: none;
+    position: absolute;
+    top: -7px;
+    left: 324px;
+    padding: 20px 24px;
+    background-color: #fff;
+}
+header .header-container .header-bottom .header-bottom_catalog-container .catalog .dropdown-item .catalog-menu > div:first-child {
+    padding-bottom: 20px;
+    align-items: center;
+}
+header .header-container .header-bottom .header-bottom_catalog-container .catalog .dropdown-item .catalog-menu > div:first-child p {
+    margin-bottom: 0;
+}
+header .header-container .header-bottom .header-bottom_catalog-container .catalog .dropdown-item .catalog-menu > div:first-child .btn:hover {
+    background-color: rgba(204, 204, 204, 0.59);
+}
+header .header-container .header-bottom .header-bottom_catalog-container .catalog .dropdown-item .catalog-menu > div:nth-child(2) {
+    padding-top: 20px;
+    border-top: 1px solid #d9e2f0;
+}
+header .header-container .header-bottom .header-bottom_catalog-container .catalog .dropdown-item .catalog-menu > div:nth-child(2) h5 {
+    font-size: 1rem;
+}
+header .header-container .header-bottom .header-bottom_catalog-container .catalog .dropdown-item .catalog-menu > div:nth-child(2) ul li {
+    margin-bottom: 5px;
+}
+header .header-container .header-bottom .header-bottom_catalog-container .catalog .dropdown-item .catalog-menu > div:nth-child(2) ul li a {
+    text-decoration: underline dotted;
+    margin-right: 10px;
+}
+header .header-container .header-bottom .header-bottom_catalog-container .catalog .dropdown-item .catalog-menu .sort {
+    gap: 20px;
+    align-items: center;
+}
+header .header-container .header-bottom .header-bottom_catalog-container .catalog .dropdown-item .catalog-menu ul {
+    list-style: none;
+    padding-left: 10px;
+}
+header .header-container .header-bottom .header-bottom_catalog-container .catalog .stabilizator::before {
+    background: url("./images/header/catalog-icons/Stabilizatory.svg") no-repeat center center;
+}
+header .header-container .header-bottom .header-bottom_catalog-container .catalog .battery::before {
+    background: url("./images/header/catalog-icons/Battery.svg") no-repeat center center;
+}
+header .header-container .header-bottom .header-bottom_catalog-container .catalog .istochnik::before {
+    background: url("./images/header/catalog-icons/Istochnik.svg") no-repeat center center;
+}
+header .header-container .header-bottom .header-bottom_catalog-container .catalog .generator::before {
+    background: url("./images/header/catalog-icons/Generator.svg") no-repeat center center;
+}
+header .header-container .header-bottom .header-bottom_catalog-container .catalog .zarad_ustr::before {
+    background: url("./images/header/catalog-icons/Zarad_ustr.svg") no-repeat center center;
+}
+header .header-container .header-bottom .header-bottom_catalog-container .catalog .controller::before {
+    background: url("./images/header/catalog-icons/controller.svg") no-repeat center center;
+}
+header .header-container .header-bottom .header-bottom_catalog-container .catalog .solar-battery::before {
+    background: url("./images/header/catalog-icons/s-batery.svg") no-repeat center center;
+}
+header .header-container .header-bottom .header-bottom_catalog-container .catalog .analizator::before {
+    background: url("./images/header/catalog-icons/Analizator.svg") no-repeat center center;
+}
+header .header-container .header-bottom .header-bottom_catalog-container .catalog .izmeritel::before {
+    background: url("./images/header/catalog-icons/Ismeritel.svg") no-repeat center center;
+}
+header .header-container .header-bottom .header-bottom_catalog-container .catalog .counter::before {
+    background: url("./images/header/catalog-icons/Counter.svg") no-repeat center center;
+}
+header .header-container .header-bottom .header-bottom_catalog-container .catalog .ippt::before {
+    background: url("./images/header/catalog-icons/IPPT.svg") no-repeat center center;
+}
+header .header-container .header-bottom .header-bottom_configurators-container .btn-configurators {
+    position: relative;
+    padding: 10px 50px;
+    background-color: #f89c48;
+    color: white;
+    border-radius: 0;
+}
+header .header-container .header-bottom .header-bottom_configurators-container .btn-configurators::before {
+    position: absolute;
+    top: 25%;
+    left: 30px;
+    width: 15px;
+    height: 19px;
+    content: "";
+    background-image: url("./images/header/Calculator.svg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+header .header-container .header-bottom .header-bottom_configurators-container .configurators {
+    list-style: none;
+}
+header .header-container .header-bottom .header-bottom_configurators-container .dropdown-menu .dropdown-item {
+    position: relative;
+    padding-left: 45px;
+}
+header .header-container .header-bottom .header-bottom_configurators-container .dropdown-menu .dropdown-item::before {
+    position: absolute;
+    top: 0.25rem;
+    left: 15px;
+    width: 20px;
+    height: 20px;
+    content: "";
+    background-size: cover;
+}
+header .header-container .header-bottom .header-bottom_configurators-container .dropdown-menu .dropdown-item:last-child {
+    padding-left: 15px;
+}
+header .header-container .header-bottom .header-bottom_configurators-container .dropdown-menu .s-stabilisator::before {
+    background: url("./images/header/configurator-icons/Stabilizatory.svg") no-repeat center center;
+}
+header .header-container .header-bottom .header-bottom_configurators-container .dropdown-menu .s-ibp::before {
+    background: url("./images/header/configurator-icons/Istochnik.svg") no-repeat center center;
+}
+header .header-container .header-bottom .header-bottom_configurators-container .dropdown-menu .s-value::before {
+    background: url("./images/header/configurator-icons/Battery.svg") no-repeat center center;
+}
+header .header-container .header-bottom .header-bottom_configurators-container .dropdown-menu .s-diametr::before {
+    background: url("./images/header/configurator-icons/Sechenie.svg") no-repeat center center;
+}
+header .header-container .header-bottom .header-bottom_configurators-container .dropdown-menu .s-green::before {
+    background: url("./images/header/configurator-icons/solar-battery.svg") no-repeat center center;
+}
+header .header-container .header-bottom .header-bottom_search-container {
+    flex-grow: 2;
+}
+header .header-container .header-bottom .header-bottom_search-container .input-group {
+    border-radius: 0px;
+}
+header .header-container .header-bottom .header-bottom_search-container .input-group .form-control, header .header-container .header-bottom .header-bottom_search-container .input-group .btn {
+    border-radius: 0;
+}
+header .header-container .header-bottom .header-bottom_search-container .input-group .btn {
+    background-color: #4674c9;
+    color: #fff;
+    padding-left: 52px;
+    position: relative;
+}
+header .header-container .header-bottom .header-bottom_search-container .input-group .btn:hover {
+    color: rgba(203, 203, 203, 0.86);
+}
+header .header-container .header-bottom .header-bottom_search-container .input-group .btn::before {
+    position: absolute;
+    top: 8px;
+    left: 21px;
+    width: 15px;
+    height: 14px;
+    content: "";
+    background: url("./images/header/Search.svg") no-repeat center center;
+    background-size: cover;
+}
+@media screen and (max-width: 1126px) {
+    header .header-top .header-top_list-container .header-top_list {
+        gap: 15px;
+    }
+    header .header-top .header-top_messenger-container {
+        gap: 15px;
+    }
+}
+@media screen and (max-width: 991px) {
+    header .header-container .header-top, header .header-container .header-main {
+        display: none !important;
+    }
+    header .header-container .header-mobile {
+        display: block;
+    }
+    header .header-container .header-mobile .navbar-brand {
+        margin-right: 0;
+        padding-bottom: 10px;
+        padding-right: 22px;
+        border-right: 1px solid #677ca2;
+    }
+    header .header-container .header-mobile .navbar-brand .logo-container {
+        margin-right: 24px;
+    }
+    header .header-container .header-mobile .navbar-brand .btn-container {
+        display: flex;
+        gap: 24px;
+    }
+    header .header-container .header-mobile .navbar-brand .btn-container .dropdown .btn {
+        padding: 0;
+    }
+    header .header-container .header-mobile .navbar-brand .btn-container .dropdown .btn::after {
+        display: none;
+    }
+    header .header-container .header-mobile .navbar-brand .btn-container .dropdown .dropdown-menu {
+        left: auto;
+        right: 0;
+    }
+    header .header-container .header-mobile .navbar-toggler {
+        max-width: 44px;
+        padding: 3px;
+        border: none;
+    }
+    header .header-container .header-mobile .navbar-collapse {
+        border-top: 1px solid #677ca2;
+        padding-top: 24px;
+        padding-bottom: 31px;
+    }
+    header .header-container .header-mobile .navbar-collapse .navbar-nav {
+        gap: 35px;
+        color: #fff;
+    }
+    header .header-container .header-mobile .navbar-collapse .navbar-nav .header-mobile_selects-container {
+        display: flex;
+        justify-content: space-around;
+    }
+    header .header-container .header-mobile .navbar-collapse .navbar-nav .header-mobile_selects-container .language {
+        padding: 8px;
+        background-color: #425e8f;
+        border: none;
+        color: #fff;
+    }
+    header .header-container .header-mobile .navbar-collapse .navbar-nav .header-mobile_selects-container .language:focus-visible {
+        outline: none;
+    }
+    header .header-container .header-mobile .navbar-collapse .navbar-nav .header-mobile_selects-container .selected, header .header-container .header-mobile .navbar-collapse .navbar-nav .header-mobile_selects-container .compare {
+        padding: 8px;
+        background-color: #425e8f;
+        position: relative;
+    }
+    header .header-container .header-mobile .navbar-collapse .navbar-nav .header-mobile_selects-container .selected::before, header .header-container .header-mobile .navbar-collapse .navbar-nav .header-mobile_selects-container .compare::before {
+        position: absolute;
+        top: 8px;
+        left: 18px;
+        width: 16px;
+        height: 15px;
+        content: "";
+        background-size: cover;
+    }
+    header .header-container .header-mobile .navbar-collapse .navbar-nav .header-mobile_selects-container .selected p, header .header-container .header-mobile .navbar-collapse .navbar-nav .header-mobile_selects-container .compare p {
+        padding-left: 34px;
+    }
+    header .header-container .header-mobile .navbar-collapse .navbar-nav .header-mobile_selects-container .selected::before {
+        background: url("./images/header/mobile/selected.svg") no-repeat center center;
+    }
+    header .header-container .header-mobile .navbar-collapse .navbar-nav .header-mobile_selects-container .compare::before {
+        background: url("./images/header/mobile/Compare.svg") no-repeat center center;
+    }
+    header .header-container .header-mobile .navbar-collapse .navbar-nav .header-mobile_address-container {
+        text-align: center;
+    }
+    header .header-container .header-mobile .navbar-collapse .navbar-nav .header-mobile_address-container .dropdown-menu {
+        font-size: 12px;
+    }
+    header .header-container .header-mobile .navbar-collapse .navbar-nav .header-mobile_communication-container {
+        display: flex;
+        gap: 15px;
+    }
+    header .header-container .header-mobile .navbar-collapse .navbar-nav .header-mobile_communication-container .phones {
+        padding: 0;
+        list-style: none;
+    }
+    header .header-container .header-mobile .navbar-collapse .navbar-nav .header-mobile_communication-container .phones .phone-item {
+        margin-bottom: 12px;
+        padding-left: 28px;
+        position: relative;
+    }
+    header .header-container .header-mobile .navbar-collapse .navbar-nav .header-mobile_communication-container .phones .phone-item:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 16px;
+        height: 15px;
+        content: "";
+        background-size: cover;
+    }
+    header .header-container .header-mobile .navbar-collapse .navbar-nav .header-mobile_communication-container .phones .phone-item a {
+        color: #fff;
+    }
+    header .header-container .header-mobile .navbar-collapse .navbar-nav .header-mobile_communication-container .phones .vodafone:before {
+        background: url("./images/header/mobile/operators/icon-phone-vodafone.svg") no-repeat center center;
+    }
+    header .header-container .header-mobile .navbar-collapse .navbar-nav .header-mobile_communication-container .phones .kyivstar:before {
+        background: url("./images/header/mobile/operators/icon-phone-kyivstar.svg") no-repeat center center;
+    }
+    header .header-container .header-mobile .navbar-collapse .navbar-nav .header-mobile_communication-container .phones .lifecell:before {
+        background: url("./images/header/mobile/operators/icon-phone-lifecell.svg") no-repeat center center;
+    }
+    header .header-container .header-mobile .navbar-collapse .navbar-nav .header-mobile_communication-container .phones .city-number:before {
+        background: url("./images/header/mobile/operators/icon-phone-city-number.svg") no-repeat center center;
+    }
+    header .header-container .header-mobile .navbar-collapse .navbar-nav .header-mobile_communication-container .schedule .callback {
+        position: relative;
+    }
+    header .header-container .header-mobile .navbar-collapse .navbar-nav .header-mobile_communication-container .schedule .callback::before {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 16px;
+        height: 15px;
+        content: "";
+        background: url("./images/header/mobile/Phone.svg") no-repeat center center;
+        background-size: cover;
+    }
+    header .header-container .header-mobile .navbar-collapse .navbar-nav .header-mobile_communication-container .schedule .callback a {
+        padding-left: 24px;
+        font-weight: 400;
+        display: block;
+        width: 71px;
+        color: #fff;
+    }
+    header .header-container .header-mobile .navbar-collapse .navbar-nav .header-mobile_list-container .header-mobile_list {
+        padding-left: 0;
+        list-style: none;
+        text-align: center;
+    }
+    header .header-container .header-mobile .navbar-collapse .navbar-nav .header-mobile_list-container .header-mobile_list li {
+        border-bottom: 1px solid #fff;
+        color: #fff;
+        padding: 12px 0;
+    }
+    header .header-container .header-mobile .navbar-collapse .navbar-nav .header-mobile_list-container .header-mobile_list li .dropdown .btn {
+        color: #fff;
+        font-size: 16px;
+        font-weight: 400;
+    }
+    header .header-container .header-mobile .navbar-collapse .navbar-nav .header-mobile_list-container .header-mobile_list li > a {
+        color: #fff;
+        font-size: 16px;
+        font-weight: 400;
+    }
+    header .header-container .header-mobile .navbar-collapse .navbar-nav .header-mobile_email-container {
+        text-align: center;
+    }
+    header .header-container .header-mobile .navbar-collapse .navbar-nav .header-mobile_email-container a {
+        color: #fff;
+        position: relative;
+        padding-left: 16px;
+    }
+    header .header-container .header-mobile .navbar-collapse .navbar-nav .header-mobile_email-container a::before {
+        position: absolute;
+        top: 3px;
+        left: 0;
+        width: 10px;
+        height: 10px;
+        content: "";
+        background: url("./images/header/mobile/Mail.svg") no-repeat center center;
+        background-size: cover;
+    }
+    header .header-container .header-mobile .navbar-collapse .navbar-nav .header-mobile_messenger-container {
+        display: flex;
+        justify-content: center;
+        gap: 68px;
+    }
+    header .header-container .header-mobile .navbar-collapse .navbar-nav .header-mobile_messenger-container .messenger-telegram, header .header-container .header-mobile .navbar-collapse .navbar-nav .header-mobile_messenger-container .messenger-viber {
+        position: relative;
+    }
+    header .header-container .header-mobile .navbar-collapse .navbar-nav .header-mobile_messenger-container .messenger-telegram::before, header .header-container .header-mobile .navbar-collapse .navbar-nav .header-mobile_messenger-container .messenger-viber::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 20px;
+        height: 20px;
+        content: "";
+        background-size: cover;
+    }
+    header .header-container .header-mobile .navbar-collapse .navbar-nav .header-mobile_messenger-container .messenger-telegram a, header .header-container .header-mobile .navbar-collapse .navbar-nav .header-mobile_messenger-container .messenger-viber a {
+        padding-left: 28px;
+        color: #fff;
+    }
+    header .header-container .header-mobile .navbar-collapse .navbar-nav .header-mobile_messenger-container .messenger-telegram::before {
+        background: url("./images/header/messengers/telegram-icon.svg") no-repeat center center;
+    }
+    header .header-container .header-mobile .navbar-collapse .navbar-nav .header-mobile_messenger-container .messenger-viber::before {
+        background: url("./images/header/messengers/viber-icon.svg") no-repeat center center;
+    }
+    header .header-container .header-bottom {
+        display: flex;
+        flex-direction: column;
+    }
+    header .header-container .header-bottom .header-bottom_search-container, header .header-container .header-bottom .header-bottom_catalog-container, header .header-container .header-bottom .header-bottom_configurators-container {
+        width: 100%;
+    }
+    header .header-container .header-bottom .header-bottom_search-container .dropdown-menu .dropdown-item, header .header-container .header-bottom .header-bottom_catalog-container .dropdown-menu .dropdown-item, header .header-container .header-bottom .header-bottom_configurators-container .dropdown-menu .dropdown-item {
+        white-space: normal;
+    }
+    header .header-container .header-bottom .header-bottom_catalog-container .btn {
+        margin: 0;
+        padding: 0.375rem 0.75rem;
+    }
+    header .header-container .header-bottom .header-bottom_configurators-container .btn {
+        width: 100%;
+    }
+}
+ 
